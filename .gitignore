@@ -1,0 +1,11 @@
+# Development files
+*.DS_Store
+composer.lock
+/node_modules/
+/vendor/
+/logs/
+/reports/
+
+# Editor configs
+.idea/
+.vs-code/
