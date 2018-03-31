@@ -37,7 +37,7 @@ function maybe_activate_plugin() {
 
 	if ( ! function_exists( '\beans_define_constants' ) ) {
 		// Deactivate.
-		deactivate_plugins( \plugin_basename( __FILE__ ) );
+		deactivate_plugins( plugin_basename( __FILE__ ) );
 		add_action( 'admin_notices', __NAMESPACE__ . '\admin_notice_message' );
 	}
 }
@@ -56,7 +56,7 @@ function maybe_deactivate_plugin() {
 
 	if ( ! function_exists( '\beans_define_constants' ) ) {
 		// Deactivate.
-		deactivate_plugins( \plugin_basename( __FILE__ ) );
+		deactivate_plugins( plugin_basename( __FILE__ ) );
 		add_action( 'admin_notices', __NAMESPACE__ . '\admin_notice_message' );
 	}
 }

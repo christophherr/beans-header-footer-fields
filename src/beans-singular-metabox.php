@@ -1,6 +1,6 @@
 <?php
 /**
- * Add the the Header and Footer Fields to the posts and pages.
+ * Add the Header and Footer Fields to posts and pages.
  *
  * @package     ChristophHerr\BeansHeaderFooterFields
  * @since       1.0.0

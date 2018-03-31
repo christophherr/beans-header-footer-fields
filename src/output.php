@@ -15,7 +15,7 @@ namespace ChristophHerr\BeansHeaderFooterFields;
 
 add_action( 'wp_head', __NAMESPACE__ . '\output_header_scripts_and_styles', 999 );
 /**
- * Echo the scripts or styles from the Beans header field into the head of the website.
+ * Echo the scripts or styles from the Beans Header field into the head of the website.
  *
  * @since 1.0.0
  *
@@ -33,7 +33,7 @@ function output_header_scripts_and_styles() {
 
 add_action( 'wp_footer', __NAMESPACE__ . '\output_footer_scripts_and_styles', 999 );
 /**
- * Echo the scripts or styles from the Beans footer field into the footer of the website.
+ * Echo the scripts or styles from the Beans Footer field into the footer of the website.
  *
  * @since 1.0.0
  *

@@ -1,6 +1,6 @@
 <?php
 /**
- * Settings array to register the header and footer Fields.
+ * Settings array to register the Header and Footer Fields.
  *
  * @package     ChristophHerr\BeansHeaderFooterFields
  * @since       1.0.0
@@ -12,7 +12,7 @@
 namespace ChristophHerr\BeansHeaderFooterFields\Config;
 
 return array(
-	// Add the styles compiler option only if it is supported.
+	// Add the Header Fields.
 	array(
 		'id'                => 'beans_header_field',
 		'label'             => esc_html__( 'Add scripts or styles to the header.', 'beans-header-footer-fields' ),
@@ -24,8 +24,7 @@ return array(
 		'sanitize_callback' => 'esc_textarea',
 
 	),
-
-	// Add the styles compiler option only if it is supported.
+	// Add the Footer fields.
 	array(
 		'id'                => 'beans_footer_field',
 		'label'             => esc_html__( 'Add scripts or styles to the footer.', 'beans-header-footer-fields' ),
