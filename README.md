@@ -35,3 +35,7 @@ Due to the nature of the plugin, the input is **NOT** sanitized or escaped and o
 ## Contributions
 
 Feedback, bug reports, and pull requests are welcome.
+
+## Credits
+
+Built by [Christoph Herr](https://wwww.christophherr.com/) standing on the shoulders of giants [Tonya Mork](https://knowthecode.io/), [Gary Jones](https://gamajo.com), [Robin Cornett](https://robincornett.com/), [Chinmoy Paul](https://genesisdeveloper.me) and many more.
