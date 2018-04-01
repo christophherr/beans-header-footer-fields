@@ -50,8 +50,10 @@
       "@phpcs-tests"
     ],
     "test-unit": "phpunit --testsuite unit --color=always",
+    "test-integration": "phpunit --testsuite integration --configuration tests/phpunit/integration/phpunit.xml.dist --color=always",
     "run-tests": [
-      "@test-unit"
+      "@test-unit",
+      "@test-integration"
     ]
   }
 }

@@ -15,16 +15,16 @@ add_action( 'admin_init', __NAMESPACE__ . '\register_sitewide_header_footer_fiel
 /**
  * Register header and footer fields on the Beans Settings page.
  *
- * @return void
+ * @return bool|void False on failure.
  */
 function register_sitewide_header_footer_fields() {
 
 	// If user doesn't have unfiltered html capability, bail out.
 	if ( ! current_user_can( 'unfiltered_html' ) ) {
-		return;
+		return false;
 	}
 
-	$fields = require BEANS_HEADER_FOOTER_FIELDS . '/config/beans-header-footer-fields-array.php';
+	$fields = require dirname( plugin_dir_path( __FILE__ ) ) . '/config/beans-header-footer-fields-array.php';
 
 	\beans_register_options( $fields, 'beans_settings', 'beans_header_footer_fields', array(
 		'title'   => esc_html__( 'Beans Header and Footer fields', 'beans-header-footer-fields' ),
