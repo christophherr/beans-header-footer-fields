@@ -20,7 +20,7 @@ add_action( 'customize_register', __NAMESPACE__ . '\register_customizer_section'
  * @return void
  */
 function register_customizer_section() {
-	$fields = require BEANS_HEADER_FOOTER_FIELDS . '/config/beans-header-footer-fields-array.php';
+	$fields = require dirname( plugin_dir_path( __FILE__ ) ) . '/config/beans-header-footer-fields-array.php';
 
 	beans_register_wp_customize_options(
 		$fields,
