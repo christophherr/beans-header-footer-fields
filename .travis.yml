@@ -3,7 +3,7 @@ sudo: false
 
 before_install:
   - phpenv config-rm xdebug.ini
-  - chmod +x ci/install-wp-tests.sh
+  - chmod +x bin/install-wp-tests.sh
 
 cache:
   apt: true
@@ -26,5 +26,5 @@ matrix:
       env: WP_VERSION=trunk
 
 script:
-  - bash ci/prepare.sh
-  - bash ci/test.sh
+  - bash bin/prepare.sh
+  - bash bin/test.sh

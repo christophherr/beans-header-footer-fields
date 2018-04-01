@@ -10,4 +10,4 @@ if [[ -z $WP_VERSION ]]; then
     WP_VERSION="latest"
 fi
 
-ci/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
+bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
