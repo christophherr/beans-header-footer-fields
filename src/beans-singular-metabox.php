@@ -11,7 +11,7 @@
 
 namespace ChristophHerr\BeansHeaderFooterFields;
 
-add_action( 'admin_init', __NAMESPACE__ . '\register_post_meta_fields', 5 );
+add_action( 'admin_init', __NAMESPACE__ . '\register_post_meta_fields' );
 /**
  * Register Header and Footer fields as post meta.
  *

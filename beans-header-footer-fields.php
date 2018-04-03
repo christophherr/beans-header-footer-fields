@@ -121,4 +121,17 @@ function launch() {
 	require BEANS_HEADER_FOOTER_FIELDS . 'src/output.php';
 }
 
-add_action( 'init', __NAMESPACE__ . '\launch' );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\setup' );
+/**
+ * Load plugin textdomain.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function setup() {
+	load_plugin_textdomain( 'beans-header-footer-fields', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+
+	add_action( 'init', __NAMESPACE__ . '\launch' );
+}
+

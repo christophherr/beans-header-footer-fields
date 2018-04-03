@@ -1,0 +1,66 @@
+# Copyright (C) 2018 Beans Header and Footer Fields
+# This file is distributed under the same license as the Beans Header and Footer Fields package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Beans Header and Footer Fields 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/beans-header-"
+"footer-fields\n"
+"POT-Creation-Date: 2018-04-03 17:18:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. translators: Link to the Beans website.
+#: beans-header-footer-fields.php:75
+msgid ""
+"Sorry, you can't use the Beans Header and Footer Fields Plugin unless the <a "
+"href=\"%s\">Beans Framework</a> is active. The plugin has been deactivated."
+msgstr ""
+
+#: config/beans-header-footer-fields-array.php:18
+msgid "Add scripts or styles to the header."
+msgstr ""
+
+#: config/beans-header-footer-fields-array.php:20
+msgid ""
+"This code will output immediately before the closing head tag in the "
+"document source."
+msgstr ""
+
+#: config/beans-header-footer-fields-array.php:30
+msgid "Add scripts or styles to the footer."
+msgstr ""
+
+#: config/beans-header-footer-fields-array.php:32
+msgid ""
+"This code will output immediately before the closing body tag in the "
+"document source."
+msgstr ""
+
+#. #-#-#-#-#  beans-header-footer-fields.pot (Beans Header and Footer Fields 1.0.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: src/beans-customizer-section.php:29 src/beans-settings-metabox.php:30
+#: src/beans-singular-metabox.php:31
+msgid "Beans Header and Footer Fields"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/christophherr/beans-header-footer-script-fields"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Custom fields to add scripts and styles to the header and footer of a "
+"website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "christophherr"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.christophherr.com"
+msgstr ""
