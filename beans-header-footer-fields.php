@@ -85,23 +85,6 @@ function admin_notice_message() {
 }
 
 /**
- * Setup the plugin's constants.
- *
- * @since 1.0.0
- *
- * @return void
- */
-function init_constants() {
-	$plugin_url = plugin_dir_url( __FILE__ );
-	if ( is_ssl() ) {
-		$plugin_url = str_replace( 'http://', 'https://', $plugin_url );
-	}
-
-	define( 'BEANS_HEADER_FOOTER_FIELDS_URL', $plugin_url );
-	define( 'BEANS_HEADER_FOOTER_FIELDS', plugin_dir_path( __FILE__ ) );
-}
-
-/**
  * Launch the plugin
  *
  * @since 1.0.0
@@ -113,12 +96,12 @@ function launch() {
 		return;
 	}
 
-	init_constants();
+	$plugin_dir = plugin_dir_path( __FILE__ );
 
-	require BEANS_HEADER_FOOTER_FIELDS . 'src/beans-customizer-section.php';
-	require BEANS_HEADER_FOOTER_FIELDS . 'src/beans-settings-metabox.php';
-	require BEANS_HEADER_FOOTER_FIELDS . 'src/beans-singular-metabox.php';
-	require BEANS_HEADER_FOOTER_FIELDS . 'src/output.php';
+	require $plugin_dir . 'src/beans-customizer-section.php';
+	require $plugin_dir . 'src/beans-settings-metabox.php';
+	require $plugin_dir . 'src/beans-singular-metabox.php';
+	require $plugin_dir . 'src/output.php';
 }
 
 add_action( 'plugins_loaded', __NAMESPACE__ . '\setup' );
