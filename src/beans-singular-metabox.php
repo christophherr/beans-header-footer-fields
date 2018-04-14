@@ -28,5 +28,5 @@ function register_post_meta_fields() {
 
 	$fields = require dirname( plugin_dir_path( __FILE__ ) ) . '/config/beans-header-footer-fields-array.php';
 
-	\beans_register_post_meta( $fields, true, 'beans_header_footer_fields', array( 'title' => esc_html__( 'Beans Header and Footer Fields', 'beans-header-footer-fields' ) ) );
+	\beans_register_post_meta( $fields, true, 'beans_header_footer_fields', [ 'title' => esc_html__( 'Beans Header and Footer Fields', 'beans-header-footer-fields' ) ] );
 }

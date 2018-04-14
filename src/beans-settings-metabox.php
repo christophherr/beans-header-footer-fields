@@ -26,8 +26,13 @@ function register_sitewide_header_footer_fields() {
 
 	$fields = require dirname( plugin_dir_path( __FILE__ ) ) . '/config/beans-header-footer-fields-array.php';
 
-	\beans_register_options( $fields, 'beans_settings', 'beans_header_footer_fields', array(
-		'title'   => esc_html__( 'Beans Header and Footer Fields', 'beans-header-footer-fields' ),
-		'context' => 'normal',
-	) );
+	\beans_register_options(
+		$fields,
+		'beans_settings',
+		'beans_header_footer_fields',
+		[
+			'title'   => esc_html__( 'Beans Header and Footer Fields', 'beans-header-footer-fields' ),
+			'context' => 'normal',
+		]
+	);
 }

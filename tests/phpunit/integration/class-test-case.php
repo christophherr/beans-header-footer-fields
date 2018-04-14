@@ -105,12 +105,12 @@ abstract class Test_Case extends WP_UnitTestCase {
 	 */
 	protected function reset_actions_container() {
 		global $_beans_registered_actions;
-		$_beans_registered_actions = array(
-			'added'    => array(),
-			'modified' => array(),
-			'removed'  => array(),
-			'replaced' => array(),
-		);
+		$_beans_registered_actions = [
+			'added'    => [],
+			'modified' => [],
+			'removed'  => [],
+			'replaced' => [],
+		];
 	}
 
 	/**
@@ -124,17 +124,17 @@ abstract class Test_Case extends WP_UnitTestCase {
 
 		// Reset the "registered" container.
 		$registered = $this->get_reflective_property( 'registered', '_Beans_Fields' );
-		$registered->setValue( new \_Beans_Fields(), array(
-			'option'       => array(),
-			'post_meta'    => array(),
-			'term_meta'    => array(),
-			'wp_customize' => array(),
-		) );
+		$registered->setValue( new \_Beans_Fields(), [
+			'option'       => [],
+			'post_meta'    => [],
+			'term_meta'    => [],
+			'wp_customize' => [],
+		] );
 
 		// Reset the other static properties.
-		foreach ( array( 'field_types_loaded', 'field_assets_hook_loaded' ) as $property_name ) {
+		foreach ( [ 'field_types_loaded', 'field_assets_hook_loaded' ] as $property_name ) {
 			$property = $this->get_reflective_property( $property_name, '_Beans_Fields' );
-			$property->setValue( new \_Beans_Fields(), array() );
+			$property->setValue( new \_Beans_Fields(), [] );
 		}
 	}
 

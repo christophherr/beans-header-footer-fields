@@ -11,9 +11,9 @@
 
 namespace ChristophHerr\BeansHeaderFooterFields\Config;
 
-return array(
+return [
 	// Add the Header Fields.
-	array(
+	[
 		'id'                => 'beans_header_field',
 		'label'             => esc_html__( 'Add scripts or styles to the header.', 'beans-header-footer-fields' ),
 		'type'              => 'textarea',
@@ -23,9 +23,9 @@ return array(
 		'capability'        => 'unfiltered_html',
 		'sanitize_callback' => 'esc_textarea',
 
-	),
+	],
 	// Add the Footer fields.
-	array(
+	[
 		'id'                => 'beans_footer_field',
 		'label'             => esc_html__( 'Add scripts or styles to the footer.', 'beans-header-footer-fields' ),
 		'type'              => 'textarea',
@@ -34,5 +34,5 @@ return array(
 		'db_type'           => 'option',
 		'capability'        => 'unfiltered_html',
 		'sanitize_callback' => 'esc_textarea',
-	),
-);
+	],
+];
