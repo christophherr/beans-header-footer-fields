@@ -25,9 +25,9 @@ function register_customizer_section() {
 	beans_register_wp_customize_options(
 		$fields,
 		'beans_header_footer_fields',
-		array(
+		[
 			'title'    => esc_html__( 'Beans Header and Footer Fields', 'beans-header-footer-fields' ),
 			'priority' => 250,
-		)
+		]
 	);
 }

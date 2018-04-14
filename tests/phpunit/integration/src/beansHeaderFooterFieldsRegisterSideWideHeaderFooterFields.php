@@ -36,7 +36,7 @@ class Tests_BeansHeaderFooterFieldsRegisterSidewideHeaderFooterFields extends Te
 	 * Test register_sitewide_header_footer_fields() should return false when unfiltered_html capability is not met.
 	 */
 	public function test_should_return_false_when_no_capability() {
-		wp_set_current_user( self::factory()->user->create( array( 'role' => 'author' ) ) );
+		wp_set_current_user( self::factory()->user->create( [ 'role' => 'author' ] ) );
 
 		$this->assertFalse( BHFF\register_sitewide_header_footer_fields() );
 	}
@@ -45,7 +45,7 @@ class Tests_BeansHeaderFooterFieldsRegisterSidewideHeaderFooterFields extends Te
 	 * Test register_sitewide_header_footer_fields() should call beans_register_options() when unfiltered_html capability is met.
 	 */
 	public function test_should_register_fields_when_capability_met() {
-		wp_set_current_user( self::factory()->user->create( array( 'role' => 'administrator' ) ) );
+		wp_set_current_user( self::factory()->user->create( [ 'role' => 'administrator' ] ) );
 
 		Monkey\Functions\expect( 'beans_register_options' )->once();
 
